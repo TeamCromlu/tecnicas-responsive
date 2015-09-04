@@ -1,0 +1,72 @@
+*
+	margin 0
+	padding 0
+html
+	font-family Arial
+	
+.Header
+	background black
+	width 100%
+	padding 30px 0
+	position relative
+	&__title
+		color white
+		text-decoration underline
+		margin-left 20px
+		text-shadow rgba(26, 245, 83, 1) 0px 0px 20px
+.Menu
+	background #656464
+	text-align center
+	width 200px
+	position absolute
+	left -200px
+	&__list
+		list-style none
+	&__item
+		display block
+	&__link
+		display block
+		padding .5em 1em
+		color white
+		text-decoration none
+		text-transform uppercase
+		&:hover
+			background lightgray
+	&.is-active
+		left 0
+.button-style
+	display none
+	cursor pointer
+	background orange
+	border none
+	padding .8em 1em
+	border-radius 10px
+	color white
+	position absolute
+	right 20px
+	top 30px
+	&.is-active
+		display block
+	
+.content
+	background yellow
+	padding 15px
+	p
+		text-align justify
+@media screen and (min-width 767px)
+	.button-style
+		display none
+		&.is-active
+			display none
+	.Menu
+		background #000000
+		width auto
+		right 20px
+		left auto
+		top 30px
+		&__list
+			list-style none
+		&__item
+			display inline-block
+		&__link
+			padding 0.8em 1.5em

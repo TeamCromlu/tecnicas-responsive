@@ -1,0 +1,37 @@
+@import "normalize.styl"
+*
+  margin 0
+  padding 0
+
+html
+  font-family Arial
+
+body
+  background-color lightgray
+
+.header__main
+  background-color orange
+  padding 25px
+  text-align center
+
+.col1
+  background-color yellow
+
+.col2
+  background-color peru
+
+.col1 p
+.col2 p
+  text-align justify
+  padding 15px
+
+@media (min-width 768px)
+    .col1
+    .col2
+      width 50%
+      float left
+@media(min-width 1068px)
+    .mostly
+      max-width 1000px
+      margin 0 auto
+
